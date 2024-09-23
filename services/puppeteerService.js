@@ -37,7 +37,7 @@ async function searchInstagram(keyword) {
       await page.waitForFunction(
         `document.body.scrollHeight > ${previousHeight}`
       );
-      await page.waitForTimeout(2000);
+      await page.waitForTimeout(10000);
     }
   } catch (error) {
     console.error("Error while scrolling and loading posts:", error);
